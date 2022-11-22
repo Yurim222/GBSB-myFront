@@ -1,4 +1,4 @@
-function header() {
+function Header() {
     return(
         <div className="w-full h-80 bg-blue-main px-default flex items-center justify-between">
              <img className= "w-full h-80 w-20 items-left" src="/gbsb.png" alt="logo" />
@@ -13,4 +13,4 @@ function header() {
     );
 }
 
-export default header;
+export default Header;

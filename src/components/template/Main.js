@@ -1,8 +1,9 @@
+import MainBoard from "../organisms/MainBoard";
 function Main()
 {
     return(
         <div>
-            <video src="gbsb-background.mp4" controls autoplay muted/>
+            <MainBoard/>
         </div>
     );
 }
