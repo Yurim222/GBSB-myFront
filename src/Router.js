@@ -6,15 +6,19 @@ import SelectPlacePage from "./pages/SelectPlacePage";
 import SelectAnotherPage from "./pages/SelectAnotherPage";
 import ResultPage from "./pages/ResultPage";
 import ErrorPage from "./pages/ErrorPage";
+import LoginPage from "./pages/LoginPage";
+
+import "./styles/global.css"
 
 function Router() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route exact path="/" element={<MainPage />} />
-                <Route exact path="/select/place" element={<SelectPlacePage />} />
+                <Route exact path="/" element={<SelectAnotherPage />} />
+                <Route exact path="/select/place" element={<ErrorPage />} />
                 <Route exact path="/select/another" element={<ErrorPage />} />
                 <Route exact path="/result/:id" element={<ResultPage />} />
+                <Route exact path="/login" element={<LoginPage />} />
             </Routes>
         </BrowserRouter>
     );
