@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-function header() {
+function Header() {
     return(
         <div className="w-full h-16 bg-blue-main px-default flex items-center justify-between">
             <div>
@@ -16,4 +16,4 @@ function header() {
     );
 }
 
-export default header;
+export default Header;

@@ -1,9 +1,8 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import MainPage from "./pages/MainPage"
 import SelectPlacePage from "./pages/SelectPlacePage";
-import SelectAnotherPage from "./pages/SelectAnotherPage";
 import ResultPage from "./pages/ResultPage";
 import ErrorPage from "./pages/ErrorPage";
 import LoginPage from "./pages/LoginPage";

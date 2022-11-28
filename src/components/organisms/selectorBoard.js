@@ -4,7 +4,7 @@ import NumberSelector from "../molecules/numberSelector.js";
 import TransSelector from "../molecules/transSelector.js";
 import ThemeSelector from "../molecules/themeSelector.js";
 
-function selectorBoard() {
+function SelectorBoard() {
     return(
         <div className="w-full px-default mb-6vh">
             <div className="h-80 flex justify-center">
@@ -40,4 +40,4 @@ function selectorBoard() {
     );
 }
 
-export default selectorBoard;
+export default SelectorBoard;
