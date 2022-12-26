@@ -8,7 +8,7 @@ function SelectorBoard() {
     return(
         <div className="w-full px-default mb-6vh">
             <div className="h-80 flex justify-center">
-                <PlaceSelector />
+                {/* <PlaceSelector /> */}
             </div>
             <div className="flex flex-col gap-y-selector-gap">
                 <div className="flex flex-col gap-y-1vw justify-center">
