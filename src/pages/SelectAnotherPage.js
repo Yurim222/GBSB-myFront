@@ -1,12 +1,8 @@
-import Header from "../components/organisms/Header";
-import Footer from "../components/organisms/Footer";
+import SelectAnother from "../components/templates/SelectAnother";
 
 function SelectAnotherPage() {
     return (
-        <>
-        <Header />
-        <Footer/>
-        </>
+        <SelectAnother />
     );
 }
 

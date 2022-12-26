@@ -44,27 +44,31 @@ function NumberSelector() {
         <div>
             <div className="w-full h-12 bg-gray-light border border-solid border-gray-main flex items-center justify-between px-0.8vw">
                 { child > 0 ? (
-                    <div className="flex gap-x-0.6vw items-center">
+                    <div className="flex gap-x-5 items-center">
                         <PersonIcon className="scale-125" />
-                        <p>성인</p>
-                        <div className="flex gap-x-0.3vw items-center">
-                            <p>{people}</p>
-                            <p>명</p>
-                        </div>
-                        <p>·</p>
-                        <p>아동</p>
-                        <div className="flex gap-x-0.3vw items-center">
-                            <p>{child}</p>
-                            <p>명</p>
+                        <div className="flex gap-x-2">
+                            <p>성인</p>
+                            <div className="flex gap-x-0.3vw items-center">
+                                <p>{people}</p>
+                                <p>명</p>
+                            </div>
+                            <p>·</p>
+                            <p>아동</p>
+                            <div className="flex gap-x-0.3vw items-center">
+                                <p>{child}</p>
+                                <p>명</p>
+                            </div>
                         </div>
                     </div>
                 ) : (
-                    <div className="flex gap-x-0.6vw items-center">
+                    <div className="flex gap-x-5 items-center">
                         <PersonIcon className="scale-125" />
-                        <p>성인</p>
-                        <div className="flex gap-x-0.3vw items-center">
-                            <p>{people}</p>
-                            <p>명</p>
+                        <div className="flex gap-x-2">
+                            <p>성인</p>
+                            <div className="flex gap-x-0.3vw items-center">
+                                <p>{people}</p>
+                                <p>명</p>
+                            </div>
                         </div>
                     </div>
                 )}
@@ -76,21 +80,21 @@ function NumberSelector() {
                         <div className="w-full h-12 border-b border-solid border-gray-main flex items-center justify-between px-0.8vw">
                             <p>성인</p>
                             <div className="flex gap-x-0.8vw">
-                                <AddCircleOutlineIcon onClick={plusPeopleHandler} />
+                                <RemoveCircleOutlineIcon onClick={minusPeopleHandler} />
                                 <div className="flex w-1vw justify-center">
                                     <p>{people}</p>
                                 </div>
-                                <RemoveCircleOutlineIcon onClick={minusPeopleHandler} />
+                                <AddCircleOutlineIcon onClick={plusPeopleHandler} />
                             </div>
                         </div>
                         <div className="w-full h-12 flex items-center justify-between px-0.8vw">
                             <p>아동</p>
                             <div className="flex gap-x-0.8vw">
-                                <AddCircleOutlineIcon onClick={plusChildHandler} />
+                                <RemoveCircleOutlineIcon onClick={minusChildHandler} />
                                 <div className="flex w-1vw justify-center">
                                     <p>{child}</p>
                                 </div>
-                                <RemoveCircleOutlineIcon onClick={minusChildHandler} />
+                                <AddCircleOutlineIcon onClick={plusChildHandler} />
                             </div>
                         </div>
                     </div>
