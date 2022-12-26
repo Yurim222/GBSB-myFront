@@ -17,7 +17,7 @@ function SearchPlace(props){
             [name]: value
         });
     };
-   /* const onReset=()=>{
+    /* const onReset=()=>{
         setInputs({
             Start: '',
             Final:'',

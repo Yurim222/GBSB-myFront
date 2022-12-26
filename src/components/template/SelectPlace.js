@@ -6,7 +6,6 @@ function SelectPlace(){
         <Header/>
         <Footer/>
         <SelectPlaceBox/>
-
     </>
     
 }

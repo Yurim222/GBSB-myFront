@@ -7,7 +7,8 @@ function SelectAnother() {
     return (
         <>
             <Header />
-            <Announcement />
+            <Announcement
+                props="여행 계획을 선택해 주세요" />
             <SelectorBoard />
             <Footer />
         </>
