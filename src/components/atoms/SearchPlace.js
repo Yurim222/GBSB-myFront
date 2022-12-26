@@ -1,42 +1,49 @@
 import React, {useState} from 'react';
-import {AiOutlineSearch} from 'react-icons/ai'
+import axios from 'axios';
 
 function SearchPlace(props){
 
-    const[inputs, setInputs] = useState({
-        SearchStart: "",
-        SearchFinal: "",
-    });
-    const{ Start, Final} = inputs;
+    const{ SelectStart, setSelectStart} = useState('');
+    const{ SelectFinal, setSelectFinal} = useState('');
 
-    const onChange=(e)=>{
-        //e를 통해 변화가 일어난 input의 정보를 받을 수 있다.
-        const {value, name} = e.target;
-        setInputs({
-            ...inputs,
-            [name]: value
-        });
+    
+    const onStartChange = (e) =>{
+        setSelectStart(e.target.value)
     };
-   /* const onReset=()=>{
-        setInputs({
-            Start: '',
-            Final:'',
-        })
-    }*/
-    return(
-        <div className="h-12 m-10 mx-44 bg-gray-light border border-solid border-gray-main rounded-3xl flex items-center grid grid-cols-2 divide-x divide-black">
+
+    const onFinalChange = (e) =>{
+        setSelectFinal(e.target.value)
+    }
+
+    const onKeyPress=(e)=>{
         
-            <div className="m-2">
-                <input placeholder="어디서 출발하세요?" type="text" name="Start" value={Start} onChange={onChange}/>
-            </div>
+            try{
+                console.log(e);
+                axios.post('/select/another',{
+                    startplace: SelectStart,
+                    finalplace: SelectFinal
+                });
+                
+            } catch (error){
+                console.error(error);
+            }
+        
+            
+    }
 
-            <div className="m-2">
-                <input className="input" placeholder="어디로 가세요?" type="text" name="Final" value={Final} onChange={onChange}/>
-            </div>
-
-            <div>
-                <AiOutlineSearch/>
-            </div>
+   
+    return(
+        <div className="h-12 m-10 mx-44 bg-gray-light border border-solid border-gray-main rounded-3xl">
+            <form onSubmit={onKeyPress}>
+                <div className="flex justify-between">
+                <div className="w-full flex items-center grid grid-cols-2 divide-x divide-black">
+                    <input className="m-2 flex justify-center items-center" placeholder="어디서 출발하세요?" type="text" name="Start" value={SelectStart} onChange={onStartChange} onKeyPress={onKeyPress}/>
+                    <input className="m-2 flex justify-center" placeholder="어디로 가세요?" type="text" name="Final" value={SelectFinal} onChange={onFinalChange} onKeyPress={onKeyPress}/>
+                    </div>
+                    <button type="submit">
+                    </button>
+                </div>
+            </form>
         </div>
     );
 }
