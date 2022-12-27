@@ -4,17 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import Router from './Router';
+//import Router from './Router';
 import './styles/global.css';
+//import { BrowserRouter } from 'react-router-dom';
 
-import MainPage from './MainPage';
+//entry point 젤 처음에 접근
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <>
     <App/>
-   <Router />
-  </React.StrictMode>
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,4 +1,4 @@
-import SelectAnother from '../components/templates/SelectAnother'
+import SelectAnother from "../components/templates/SelectAnother";
 
 function SelectAnotherPage() {
     return (

@@ -4,20 +4,37 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
-        'default': '370px',
+        'default': '19.2vw',
         '50': '50px',
         '80': '80px',
         '100': '100px',
         '150': '150px',
         '180': '180px',
-        '200': '200px'
+        '200': '200px',
+        'theme-width': '12.7vw',
+        'theme-height': '16vw',
+        'theme-gap': '3.2vw',
+        'selector-gap': '2vw',
+
+        '0.3vw': '0.3vw',
+        '0.5vw': '0.5vw',
+        '0.6vw': '0.6vw',
+        '0.8vw': '0.8vw',
+        '1vw': '1vw',
+        
+        '5vh': '5vh',
+        '6vh': '6vh',
+        '7vh': '7vh',
+        '8vh': '8vh',
+        '10vh': '10vh',
       },
       colors: {
-        'blue-main': '#3e8df4',
         'blue-dark': '#2980f2',
+        'blue-main': '#3e8df4',
         'blue-medium': '#6ea9f7',
         'blue-semilight': '#9fc6f9',
         'blue-light': '#cfe2fc',
+        'real-blue': '#1b1464',
 
         'gray-main': '#999999',
         'gray-medium': '#cccccc',

@@ -1,16 +1,19 @@
-function header() {
+import { Link } from "react-router-dom"
+
+function Header() {
     return(
-        <div className="w-full h-80 bg-blue-main px-default flex items-center justify-between">
-             <img className= "w-full h-80 w-20 items-left" src="/gbsb.png" alt="logo" />
-            <div className="text-slate-100 w-24">
-                <p>여행 갈까?</p>
+        <div className="w-full h-16 bg-blue-main px-default flex items-center justify-between">
+            <div>
+                <img className="w-10" src={process.env.PUBLIC_URL + '/logo.png'} alt="logo" />
             </div>
-            <div className="flex gap-x-5 text-slate-100	">
-                <button>로그인</button>
-                <button>회원가입</button>
+            <div className="flex gap-x-5 text-white">
+                <Link to='/login' style={{ textDecoration: "none" }}>
+                    <p>로그인</p>
+                </Link>
+                <p>회원가입</p>
             </div>
         </div>
     );
 }
 
-export default header;
+export default Header;
