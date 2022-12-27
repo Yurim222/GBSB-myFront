@@ -24,6 +24,7 @@ function SearchPlace(props){
                     finalplace: SelectFinal
                 });
                 
+                
             } catch (error){
                 console.error(error);
             }

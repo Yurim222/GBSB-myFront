@@ -34,6 +34,7 @@ module.exports = {
         'blue-medium': '#6ea9f7',
         'blue-semilight': '#9fc6f9',
         'blue-light': '#cfe2fc',
+        'real-blue': '#1b1464',
 
         'gray-main': '#999999',
         'gray-medium': '#cccccc',

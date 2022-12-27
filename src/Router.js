@@ -6,7 +6,6 @@ import SelectPlacePage from "./pages/SelectPlacePage";
 import SelectAnotherPage from "./pages/SelectAnotherPage";
 import ResultPage from "./pages/ResultPage";
 import LoginPage from "./pages/LoginPage";
-import DayonePage from "./pages/DayonePage";
 import "./styles/global.css"
 
 function Router() {
@@ -19,9 +18,7 @@ function Router() {
                 <Route exact path="/result" element={<ResultPage />} />
                 <Route exact path="/result/:id" element={<ResultPage />} />
                 <Route exact path="/login" element={<LoginPage />} />
-                <Route exact path="/result/day1" element={<DayonePage/>} />
-                <Route exact path="/result/day2" element={<DayonePage/>} />
-                <Route exact path="/result/day3" element={<DayonePage/>} />
+
 
             </Routes>
         </BrowserRouter>
